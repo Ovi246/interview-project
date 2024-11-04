@@ -1,0 +1,13 @@
+# Python
+backend/venv/
+*.pyc
+__pycache__/
+
+# Node
+frontend/node_modules/
+
+# Docker
+mongo-data/
+
+# Environment variables
+.env
