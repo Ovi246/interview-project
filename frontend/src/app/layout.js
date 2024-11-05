@@ -7,6 +7,8 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import "./globals.css";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,14 +31,6 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body>
-          <header>
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </header>
           <main>{children}</main>
         </body>
       </html>
