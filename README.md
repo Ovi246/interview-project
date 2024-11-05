@@ -111,9 +111,10 @@ This command builds the Docker images (if they haven't been built before) and st
 Ensure MongoDB is running on your system or you have a valid MongoDB connection string.
 
 1. Start the Python backend:
+- Make sure you're in the project root directory
+
 ```
-# Make sure you're in the project root directory
-python backend/main.py
+uvicorn main:app --reload
 ```
 
 2. In a new terminal, start the Next.js frontend:
